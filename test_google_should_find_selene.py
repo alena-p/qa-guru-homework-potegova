@@ -8,5 +8,5 @@ def test_success_finding(open_browser):
 
 
 def test_failed_finding(open_browser):
-    browser.element('[name="q"]').should(be.blank).type('solitaire').press_enter()
-    browser.element('[id="search"]').should(have.text('yashaka/selene: User-oriented Web UI browser tests in Python'))
+    browser.element('[name="q"]').should(be.blank).type('selena gomez').press_enter()
+    browser.element('[id="search"]').should_not(have.text('yashaka/selene: User-oriented Web UI browser tests in Python'))
